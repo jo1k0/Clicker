@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js" defer></script>
+    <style>
+        
+        body {
+    font-family: 'Arial', sans-serif;
+    background-color: #000000; /* Чорний фон */
+    color: #dcdcdc; /* Світло-сірий текст */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    cursor: url('cursor-light.png'), auto; /* За замовчуванням кастомний курсор */
+}
+
+button, input[type="text"] {
+    background-color: #1a1a1a; /* Темно-сірий фон */
+    color: #dcdcdc; /* Світло-сірий текст */
+    border: 1px solid #a64dff; /* Фіолетова обводка */
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+button:hover, input[type="text"]:hover {
+    background-color: #a64dff; /* Фіолетовий фон при наведенні */
+    color: #000000; /* Чорний текст при наведенні */
+    box-shadow: 0 0 10px #a64dff; /* Підсвічування елемента */
+    transform: scale(1.05);
+    cursor: url('cursor-highlight.png'), pointer; /* Курсор підсвічується */
+}
+
+button:active {
+    transform: scale(1);
+}
+
+
+    </style>
+</head>
+
+<body>
+
+    <div>
+        <h1 id="score-h1"> Score:</h1>
+    </div>
+    <div><button onclick="Click()">
+    <p>click me!!!</p>
+    </button>
+        
+    </div>
+    <div>
+        <button class="button2" onclick="Upgrate()">Buy upgrate price:10</button>
+    </div>
+    <div>
+        <button class="button3" onclick="Reset()"><p>Reset score</p></button>
+    </div>
+    <div>
+        <button class="button4" onclick="saveProgress()">Save</button>
+    </div>
+    <div>
+        <button class="button5" onclick="loadProgress()" >Load progres</button>
+    </div>
+    <div>
+        <button class="button6" onclick="BuyAutoClicker()">Buy AutoClicker:10</button>
+    </div>
+    
+</body>
+
+</html>
